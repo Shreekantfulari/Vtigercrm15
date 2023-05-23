@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animation Example</title>
+	<style type="text/css">
+		.demo
+		{
+			height: 100px;
+			width: 100px;
+			border: 0px;
+			background-color: red;
+			position: relative;
+			animation-name: something;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+		@keyframes something
+		{
+			0%
+			{
+				top: 0px;
+				left: 0px;
+				height: 100px;
+				width: 100px;
+				border-radius: 0px;
+				background-color: red;
+				animation-timing-function: ease-out;
+				transform: rotate(360deg);
+			}
+			25%
+			{
+				top: 0px;
+				left: 200px;
+				height: 100px;
+				width: 100px;
+				border-radius: 0px;
+				background-color: red;
+				animation-timing-function: ease-in;
+				transform: rotate(-360deg);
+			}
+			75%
+			{
+				top: 200px;
+				left: 200px;
+				height: 100px;
+				width: 100px;
+				border-radius: 0px;
+				background-color: red;
+				animation-timing-function: ease-out;
+				transform: rotate(360deg);
+			}
+			100%
+			{
+				top: 0px;
+				left: 0px;
+				height: 100px;
+				width: 100px;
+				border-radius: 0px;
+				background-color: red;
+				animation-timing-function: ease-in;
+				transform: rotate(-360deg);
+			}
+		}
+
+		.demo:hover
+		{
+		   height: 100px;
+           width: 100px;
+           border-radius: 50px;
+           transition-duration: 5s;
+           transform: rotate(360deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="demo"></div>
+
+</body>
+</html>
